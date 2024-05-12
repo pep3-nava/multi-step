@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script defer src="./index.js"></script>
+    <title>Multi Level Register</title>
+</head>
+<body>
+    <div class="form-page-one">  
+        <form class="step-one">
+            <h1>Register</h1>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="user_name" placeholder="enter your name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email_address" placeholder="example@gmail.com" required>
+            <input type="button" class="button" value="Continue" id="step-one-button">
+        </form>
+        <div class="step-two">
+            <h1>Which topics you are intrested in?</h1>
+            <h2 id="option1">Software Development</h2>
+            <h2 id="option2">User Experience</h2>
+            <h2 id="option3">Graphic Design</h2>
+            <p class="button" id="step-two-button">Continue</p>
+        </div>
+        <div class="step-three">
+            <h1>Summary</h1>
+            <p>Name: <span id="add-name"></span></p>
+            <p>Email: <span id="add-email"></span></p>
+            <p>Topics: <ul >
+                <li id="add-topic1"></li>
+                <li id="add-topic2"></li>
+            </ul></p>
+            <p class="button" id="step-three-button">Continue</p>
+        </div>
+    </div>
+    <div class="steps">
+        <p class="step-counter">Step 1 of 3</p>
+        <div class="step" id="step1"></div>
+        <div class="step" id="step2"></div>
+        <div class="step" id="step3"></div>
+    </div>
+</body>
+</html>
